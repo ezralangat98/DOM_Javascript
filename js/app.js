@@ -33,6 +33,12 @@ let heading2 = document.querySelector('h2');
 //Nesting selectors with css sysntax
 let image = document.querySelector('.card img');
 
-console.log(image);
+//Query selector supports nth-child, first-child and last-child
+let link;
+link = document.querySelector('#primary a:first-child')
+link = document.querySelector('#primary a:last-child')
+link = document.querySelector('#primary a:nth-child(2)')
+
+console.log(link );
 //End of My Practice
 
