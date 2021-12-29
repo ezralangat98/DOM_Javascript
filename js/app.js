@@ -28,8 +28,11 @@ const newText = tagline.textContent.replace('$15','$10');
 tagline.textContent = newText;
 
 //Selecting by tag
-let heading2 = document.querySelector('h2');
+let heading2 = document.querySelector('h2');  
 
-console.log(heading2);
+//Nesting selectors with css sysntax
+let image = document.querySelector('.card img');
+
+console.log(image);
 //End of My Practice
 
