@@ -52,6 +52,35 @@ hello = function() {
 
 hello = () => "Hello World!";
 
+//Destructuring
+//Destructuring makes it easy to extract only what is needed from n array or object.
+//Before
+const vehicles = ['mustang', 'f-150', 'expedition'];
 
+// old way
+const car = vehicles[0];
+const truck = vehicles[1];
+const suv = vehicles[2];
+
+//With destructuring:
+const vehicles = ['mustang', 'f-150', 'expedition'];
+
+const [car, truck, suv] = vehicles;
+//the order that variables are declared is important.
+//If we only want the car and suv we can simply leave out the truck but keep the comma:
+
+const [car,, suv] = vehicles;
+
+//Destructuring comes in handy when a function returns an array:
+function calculate(a, b) {
+	const add = a + b;
+	const subtract = a - b;
+	const multiply = a * b;
+	const divide = a / b;
+  
+	return [add, subtract, multiply, divide];
+  }
+  
+  const [add, subtract, multiply, divide] = calculate(4, 7);
 //End of My Practice
 
