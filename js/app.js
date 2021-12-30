@@ -40,5 +40,18 @@ link = document.querySelector('#primary a:last-child')
 link = document.querySelector('#primary a:nth-child(2)')
 
 console.log(link );
+
+
+//Arrow functions allow us to write shorter function syntax:
+
+hello = function() {
+	return "Hello World!";
+  }
+
+//With Arrow Function:
+
+hello = () => "Hello World!";
+
+
 //End of My Practice
 
