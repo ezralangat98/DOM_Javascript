@@ -12,6 +12,7 @@ addToCartBtns.forEach((btn) => {
 });
 console.log(addToCartBtns);
 //My Practice
+//--Document--
 let heading = document.getElementById('heading');
 
 heading.style.background = 'black';
@@ -86,9 +87,22 @@ function calculate(a, b) {
   
   const [add, subtract, multiply, divide] = calculate(4, 7);
 
+//VARIABLES - React ES6 Variables
+// --VAR--
+// var x = 5.6;
+// If you use var outside of a function, it belongs to the global scope.
+// If you use var inside of a function, it belongs to that function.
+// If you use var inside of a block, i.e. a for loop, the variable is still available outside of that block.
+// var has a function scope, not a block scope.
+
+// --LET--
+// let x = 5.6;
+// let is the block scoped version of var, and is limited to the block (or expression) where it is defined.
+// If you use let inside of a block, i.e. a for loop, the variable is only available inside of that loop.
+// let has a block scope.
 
 // --CONST-- does not define a constant value. It defines a constant reference to a value.
-
+//const has a block scope.
 // Because of this you can NOT:
 // Reassign a constant value, array and object
 
