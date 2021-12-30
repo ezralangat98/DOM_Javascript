@@ -56,7 +56,27 @@
     document.write("<p>Product: " + multiply + "</p>");
     document.write("<p>Quotient " + divide + "</p>");
 </script>
-
-
+<h1 id="demo"></h1>
+<script>
+//ternary operator is a simplified conditional operator like if / else.
+    function renderApp() {
+      document.getElementById("demo").innerHTML = "Welcome!";
+    }
+    
+    function renderLogin() {
+      document.getElementById("demo").innerHTML = "Please log in";
+    }
+    
+    let authenticated = true;
+    //Here is an example using if / else:
+    if (authenticated) {
+      renderApp();
+    } else {
+      renderLogin();
+    }
+    //Here is the same example using a ternary operator:
+    authenticated ? renderApp() : renderLogin();
+    
+    </script>
 </body>
 </html>

@@ -55,7 +55,7 @@ hello = function() {
 
 hello = () => "Hello World!";
 
-//Destructuring
+//--Destructuring--
 //Destructuring makes it easy to extract only what is needed from n array or object.
 //Before
 const vehicles = ['mustang', 'f-150', 'expedition'];
@@ -136,6 +136,50 @@ import { name, age } from "./person.js";
 //Import a default export from the file message.js:
 import message from "./message.js";
 
+// --Ternary Operator--
+// It is a simplified conditional operator like if / else.
 
+// Syntax: condition ? <expression if true> : <expression if false>
+
+// Here is an example using if / else:
+if (authenticated) {
+	renderApp();
+  } else {
+	renderLogin();
+  }
+//With Ternary
+authenticated ? renderApp() : renderLogin();
+
+// --Spread Operator--
+//spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
+// Example
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo];
+
+//spread operator is often used in combination with destructuring.
+//Assign the first and second items from numbers to variables and put the rest in an array:
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const [one, two, ...rest] = numbers;
+
+// We can use the spread operator with objects too:
+
+// Example
+// Combine these two objects:
+
+const myVehicle = {
+  brand: 'Ford',
+  model: 'Mustang',
+  color: 'red'
+}
+
+const updateMyVehicle = {
+  type: 'car',
+  year: 2021, 
+  color: 'yellow'
+}
+
+const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
 //End of My Practice
 
